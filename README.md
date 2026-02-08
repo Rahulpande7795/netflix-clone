@@ -12,6 +12,15 @@ This project recreates the look and feel of Netflix’s homepage with a strong f
 
 ---
 
+
+##  📸 Preview
+![](sample/home_page.png)
+![](sample/secction2.png)
+![](sample/section3.png)
+![](sample/section4.png)
+![](sample/section5.png)
+![](sample/section6.png)
+---
 ## 🌟 Features
 
 - 🎥 Netflix-inspired modern UI
