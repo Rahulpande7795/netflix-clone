@@ -1,11 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap");
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 * {
   padding: 0;
   margin: 0;
@@ -97,42 +91,6 @@ nav button {
   z-index: 20;
 }
 
-.input-group {
-  position: relative;
-  width: 100%;
-  max-width: 380px;
-}
-
-.input-group input {
-  width: 100%;
-  padding: 18px 16px 6px;
-  font-size: 16px;
-  background-color: rgba(23, 23, 23, 0.7);
-  border: 1px solid rgba(246, 238, 238, 0.5);
-  border-radius: 4px;
-  color: white;
-  outline: none;
-}
-
-.input-group label {
-  position: absolute;
-  top: 50%;
-  left: 16px;
-  color: #8c8c8c;
-  font-size: 16px;
-  pointer-events: none;
-  transform: translateY(-50%);
-  transition: all 0.2s ease;
-}
-
-/* Float label on focus or when input has value */
-.input-group input:focus + label,
-.input-group input:not(:placeholder-shown) + label {
-  top: 6px;
-  font-size: 12px;
-  color: #8c8c8c;
-}
-
 .btn {
   padding: 3px 8px;
   font-weight: 400;
@@ -146,6 +104,7 @@ nav button {
 .btn-red {
   background-color: red;
   color: white;
+  padding: 3px 24px;
   font-size: 20px;
   border-radius: 4px;
   font-weight: 400;
@@ -156,35 +115,6 @@ nav button {
   color: white;
 }
 
-.spinner {
-  width: 18px;
-  height: 18px;
-  border: 3px solid rgba(255, 255, 255, 0.3);
-  border-top: 3px solid white;
-  border-radius: 50%;
-  display: none;
-  animation: spin 0.8s linear infinite;
-}
-
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-button.loading .btn-text {
-  display: none;
-}
-
-button.loading .spinner {
-  display: inline-block;
-}
-
-button.loading {
-  opacity: 0.7;
-  pointer-events: none;
-}
-
 .hero-buttons {
   display: flex;
   align-items: center;
@@ -192,20 +122,7 @@ button.loading {
   gap: 16px;
 }
 
-.hero-buttons .input-group input {
-  height: 56px;
-  padding: 18px 16px 16px;
-  line-height: 1.2;
-}
-
-.hero-buttons button {
-  height: 56px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.main input:not(#email) {
+.main input {
   padding: 7px 101px 8px 14px;
   color: white;
   font-size: 12px;
